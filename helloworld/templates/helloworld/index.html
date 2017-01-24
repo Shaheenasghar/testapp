@@ -1,0 +1,9 @@
+{% if all_semesters %}
+<ul>
+              {% for BSIT in all_semesters %}
+     <li> <a href="/helloworld/{{ BSIT.id }}"> {{ BSIT.Class_Title }}</a></li>
+             {% endfor %}
+         </ul>
+{% else %}
+    <h1>There is no class</h1>
+{% endif %}
